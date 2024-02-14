@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 async function run() {
     // For text-only input, use the gemini-pro model
     const model = genAI.getGenerativeModel({ model: "gemini-pro"});
-    const theme = 'Old haunted house.'
+    const theme = 'medeival castle'
     const prompt = `
     Generate a description of each room in the array.
     
